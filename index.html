@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Atif Memon Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+<!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<!-- Bootstrap Modal & jQuery (Already included in Bootstrap projects) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+.custom-img {
+	/* background-color: #FFBD39; */
+	height: 120vh;
+	margin-top: 5rem;
+}
+
+/* Medium and large devices ke liye image ko right side per shift karein */
+@media (max-width: 1000px) { /* Tablets and above */
+    .custom-img {
+		display: none !important;
+    }
+}
+
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+			<a class="navbar-brand" href="index.html">Atif &nbsp;<span style="color:#FFBD39;">Memon</span></a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		<div class="home-slider owl-carousel">
+		  <div class="slider-item">
+			<div class="overlay"></div>
+			<div class="container">
+			  <div style="width: 100%; display: flex; justify-content: space-between; align-items: center;" data-scrollax-parent="true">
+				
+				<!-- Left Side Content -->
+				<div class= "slider-text one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+				  <div class="text">
+					<span class="subheading">Hello!</span>
+					<h1 class="mb-4 mt-3">I'm <span>Atif Memon</span></h1>
+	  
+					<!-- Typing Animation -->
+					<span id="typing-animation"></span>
+	  
+					<script>
+					  const typingAnimationElement = document.getElementById('typing-animation');
+					  const typingTexts = ['Web & App Developer  '];
+	  
+					  function playTypingAnimation(text) {
+						for (let i = 0; i < text.length; i++) {
+						  setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+						  }, i * 200);
+						}
+						setTimeout(() => {
+						  typingAnimationElement.textContent = '';
+						  playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+					  }
+	  
+					  playTypingAnimation(typingTexts[0]);
+					</script>
+	  
+					<br><br>
+					<h2>A Senior Web & App Developer </h2>
+					<a href="#" class="btn btn-white btn-outline-white py-3 px-4">My works</a>
+				  </div>
+				</div>
+	  
+				<!-- Right Side Image -->
+			  <div class="one-third order-md-last img ">
+				  <!-- <img src="images/bg_1.png" class="img-fluid custom-img" alt="Atif Memon"> -->
+				</div> 
+	  
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+	  
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img" style="background-color: #FFBD39; border-radius: 50%;">
+										<img src="images/about-me.png" class="img-fluid rounded-circle b-shadow-a " alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Atif Memon</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Senior Web & App Develoepr</span></p>
+										<p><span class="title-s">Experience: </span> <span>3 Years </span></p>
+										<p><span class="title-s">Address: </span> <span>Hyderabad, Pakistan</span></p>
+									  </div>
+									</div>
+								  </div>
+								  <div class="skill-mf">
+									<p class="title-s">Skills</p>
+								
+									<span>Website Designing</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								
+									<span>Frontend Designing</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								
+									<span>Backend Development</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								
+									<span>MERN Stack Development</span> <span class="pull-right">88%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 88%;" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								
+									<span>App Designing</span> <span class="pull-right">87%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 87%;" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								
+									<span>Mobile App Development</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								
+									<span>PHP</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								
+									<span>SQL</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>Professional FullStack Developer with Three Years of Experience
+
+									I am Atif Memon, a professional MERN Stack developer with over 3 years of experience in building high-quality, responsive, and pixel-perfect web applications. 
+									
+									My expertise includes MERN Stack Development, Frontend Designing, Backend Development, App Designing, Mobile App Development, PHP, SQL. 
+									
+									Using the power of React.js, Node.js, Express.js, and MongoDB, I specialize in delivering custom solutions tailored to your unique needs.
+									</p>
+																	<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Web & App Developer</span></li>
+									<li class="d-flex"><span>Education:</span> <span>BS-Computer Science 2023-2026</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Urdu</span></li>
+									<li class="d-flex"><span>Other Skills:</span> 
+										<span>MERN Stack Development, Frontend Designing, Backend Development, App Designing, Mobile App Development, PHP, SQL</span>
+									</li>
+																		
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="30">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="#" class="btn btn-primary py-3 px-3">Visit</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+
+	<section class="ftco-section" id="project-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Projects</h1>
+			  <h2 class="mb-4">Projects</h2>
+			  <p>Below are the sample Web & App Projects.</p>
+			</div>
+		  </div>
+		  <h2 style="font-weight: bold;">Web <span style="color: #FFBD39;">Projects</span></h2>
+		  <hr style="background-color: #FFBD39;">
+	  
+		  <div class="row d-flex">
+			<!-- Project 1 -->
+			<div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry justify-content-end">
+				<a class="block-20 zoom-effect project-img" style="background-image: url('images/Projectimages/bookstore1.jpg');" data-target="#projectModal1" data-toggle="modal"></a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a>BookStore</a></h3>
+				  <p>Built using React, Node.js, and MongoDB. Includes Admin panel and User authentication, product management, and secure payment integration. Provides a seamless shopping experience with scalability in mind.</p>
+				</div>
+			  </div>
+			</div>
+	  
+			<!-- Project 2 -->
+			<div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry justify-content-end">
+				<a class="block-20 zoom-effect project-img" style="background-image: url('images/Projectimages/school1.jpg');" data-target="#projectModal2" data-toggle="modal"></a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a>School Management System</a></h3>
+				  <p>Built with React.js and Tailwind CSS. Includes a responsive design, dynamic data handling, and an intuitive admin panel. Features cover student and teacher management, class scheduling, attendance tracking, performance monitoring, fee management, and communication tools. The admin panel enables seamless control over user roles, school operations, and real-time reporting.</p>
+				</div>
+			  </div>
+			</div>
+	  
+			<!-- Project 3 -->
+			<div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry justify-content-end">
+				<a class="block-20 zoom-effect project-img" style="background-image: url('images/Projectimages/social2.jpg');" data-target="#projectModal3" data-toggle="modal"></a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a>Social Media</a></h3>
+				  <p>Built with React.js and Tailwind CSS. Includes responsive design, dynamic project loading, and interactive features such as posts, friend requests, and user profiles.</p>
+				</div>
+			  </div>
+			</div>
+	  
+			<!-- Project 4 -->
+			<div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry justify-content-end">
+				<a class="block-20 zoom-effect project-img" style="background-image: url('images/Projectimages/appointment.jpg');" data-target="#projectModal4" data-toggle="modal"></a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a>Appointment Calendar</a></h3>
+				  <p>Developed with the MERN stack and integrated with Socket.io for real-time updates. Features include appointment scheduling, calendar synchronization, and real-time communication.</p>
+				</div>
+			  </div>
+			</div>
+			
+			</div>
+			<h2 style="font-weight: bold;">Video <span style="color: #FFBD39;">Samples</span></h2>
+
+			<hr style="background-color: #FFBD39;">
+			<div class="row d-flex">
+<!-- Video Project Thumbnail -->
+<div class="col-md-4 d-flex ftco-animate">
+    <div class="blog-entry justify-content-end">
+        <a class="block-20 zoom-effect project-video-thumbnail" 
+           style="background-image: url('images/Projectimages/thm1.jpg');" 
+           data-toggle="modal" 
+           data-target="#videoModal1"
+           >
+        </a>
+        <div class="text mt-3 float-right d-block">
+            <h3 class="heading"><a>Power Up With Coffee</a></h3>
+            <p>"Power Up With Coffee" is a modern landing page with a sleek design, easy ordering, secure payments, and smooth navigation. It ensures a seamless experience for coffee lovers and business owners alike. </p>
+        </div>
+    </div>
+</div>
+<!-- Video Project Thumbnail -->
+<div class="col-md-4 d-flex ftco-animate">
+    <div class="blog-entry justify-content-end">
+        <a class="block-20 zoom-effect project-video-thumbnail" 
+           style="background-image: url('images/Projectimages/thm2.jpg');" 
+           data-toggle="modal" 
+           data-target="#videoModal2"
+           >
+        </a>
+        <div class="text mt-3 float-right d-block">
+            <h3 class="heading"><a>GlameGrove</a></h3>
+            <p>GlameGrove is a stylish online store offering premium makeup, jewelry, and ladies' accessories. With a sleek design, secure shopping, and fast delivery, it’s your go-to destination for fashion and beauty.</p>
+        </div>
+    </div>
+</div>
+<!-- Video Project Thumbnail -->
+<div class="col-md-4 d-flex ftco-animate">
+    <div class="blog-entry justify-content-end">
+        <a class="block-20 zoom-effect project-video-thumbnail" 
+           style="background-image: url('images/Projectimages/thm3.jpg');" 
+           data-toggle="modal" 
+           data-target="#videoModal3"
+           >
+        </a>
+        <div class="text mt-3 float-right d-block">
+            <h3 class="heading"><a>SignUp page</a></h3>
+            <p>
+				A SignUp Page for GlameGrove should be simple, stylish, and user-friendly, ensuring a smooth registration process.</p>
+        </div>
+    </div>
+</div>
+<!-- Video Project Thumbnail -->
+<div class="col-md-4 d-flex ftco-animate">
+    <div class="blog-entry justify-content-end">
+        <a class="block-20 zoom-effect project-video-thumbnail" 
+           style="background-image: url('images/Projectimages/thm4.jpg');" 
+           data-toggle="modal" 
+           data-target="#videoModal4"
+           >
+        </a>
+        <div class="text mt-3 float-right d-block">
+            <h3 class="heading"><a>Boot in Black</a></h3>
+            <p>Boot in Black is a modern online store offering premium black boots, from chic ankle styles to rugged combat designs. Enjoy high-quality footwear with easy navigation and secure checkout.</p>
+        </div>
+    </div>
+</div>
+<div class="col-md-4 d-flex ftco-animate">
+    <div class="blog-entry justify-content-end">
+        <a class="block-20 zoom-effect project-video-thumbnail" 
+           style="background-image: url('images/Projectimages/thm5.jpg');" 
+           data-toggle="modal" 
+           data-target="#videoModal5"
+           >
+        </a>
+        <div class="text mt-3 float-right d-block">
+            <h3 class="heading"><a>Picture templete</a></h3>
+            <p>
+				A modern picture template using a grid layout for clean, organized image display. Perfect for portfolios, galleries, and e-commerce sites.</p>
+        </div>
+    </div>
+</div>
+
+			</div>
+			<h2 style="font-weight: bold;">App <span style="color: #FFBD39;">Projects</span></h2>
+
+			<hr style="background-color: #FFBD39;">
+			<div class="row d-flex">
+				<!-- Project 5 -->
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				  <a class="block-20 zoom-effect project-img" style="background-image: url('images/Projectimages/app2.jpg');" data-target="#projectModal5" data-toggle="modal"></a>
+				  <div class="text mt-3 float-right d-block">
+					<h3 class="heading"><a>Summer Shoes Shopping App</a></h3>
+					<p>Discover and shop the latest Nike sneakers with an easy-to-use interface. Find the perfect pair in no time and enjoy an enhanced shopping experience.</p>
+				  </div>
+				</div>
+			  </div>
+			  <!-- Project 6 -->
+			  <div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				  <a class="block-20 zoom-effect project-img" style="background-image: url('images/Projectimages/app4.jpg');" data-target="#projectModal6" data-toggle="modal"></a>
+				  <div class="text mt-3 float-right d-block">
+					<h3 class="heading"><a>Finance Tracking App</a></h3>
+					<p>Track your financial transactions, manage your budget, and see real-time spending insights. Stay on top of your finances effortlessly.</p>
+				  </div>
+				</div>
+			  </div>
+			  <!-- Project 7 -->
+			  <div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				  <a class="block-20 zoom-effect project-img" style="background-image: url('images/Projectimages/app8.jpg');" data-target="#projectModal7" data-toggle="modal"></a>
+				  <div class="text mt-3 float-right d-block">
+					<h3 class="heading"><a>Food Ordering App</a></h3>
+					<p>Easily browse the menu, customize your order, and have your favorite meals delivered right to your door with ease.</p>
+				  </div>
+				</div>
+			  </div>
+			  <!-- Project 8 -->
+			  <div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				  <a class="block-20 zoom-effect project-img" style="background-image: url('images/Projectimages/app12.jpg');" data-target="#projectModal8" data-toggle="modal"></a>
+				  <div class="text mt-3 float-right d-block">
+					<h3 class="heading"><a>Lifestyle Management App
+					</a></h3>
+					<p>This app helps you organize daily activities and set up routines. Stay on track with reminders, task management, and easy navigation.</p>
+				  </div>
+				</div>
+			  </div>
+			  <!-- Project 9 -->
+			  <div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				  <a class="block-20 zoom-effect project-img" style="background-image: url('images/Projectimages/app13.jpg');" data-target="#projectModal9" data-toggle="modal"></a>
+				  <div class="text mt-3 float-right d-block">
+					<h3 class="heading"><a>Personalized Meal Prep App</a></h3>
+					<p>Get custom meal suggestions based on your preferences and dietary goals. Track your meals, discover recipes, and stay healthy with ease.</p>
+				  </div>
+				</div>
+			  </div>
+			</div>
+
+		</div>
+	  </section>
+	  
+
+
+	  <!-- Project 1 Modal -->
+<div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="projectModal1Label">Project 1 Details</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <div class="owl-carousel project-slider">
+			<img src="images/Projectimages/bookstore1.jpg" class="img-fluid" alt="Project 1 Image 1">
+			<img src="images/Projectimages/bookstore2.jpg" class="img-fluid" alt="Project 1 Image 2">
+			<img src="images/Projectimages/bookstore3.jpg" class="img-fluid" alt="Project 1 Image 3">
+			<img src="images/Projectimages/bookstore4.jpg" class="img-fluid" alt="Project 1 Image 3">
+			<img src="images/Projectimages/bookstore5.jpg" class="img-fluid" alt="Project 1 Image 3">
+			<img src="images/Projectimages/bookstore6.jpg" class="img-fluid" alt="Project 1 Image 3">
+			<img src="images/Projectimages/bookstore7.jpg" class="img-fluid" alt="Project 1 Image 3">
+			<img src="images/Projectimages/bookstore8.jpg" class="img-fluid" alt="Project 1 Image 3">
+			<img src="images/Projectimages/bookstore9.jpg" class="img-fluid" alt="Project 1 Image 3">
+			<img src="images/Projectimages/bookstore10.jpg" class="img-fluid" alt="Project 1 Image 3">
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+  
+  <!-- Project 2 Modal -->
+  <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModal2Label" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="projectModal2Label">Project 2 Details</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <div class="owl-carousel project-slider">
+			<img src="images/Projectimages/school1.jpg" class="img-fluid" alt="Project 2 Image 1">
+			<img src="images/Projectimages/school2.jpg" class="img-fluid" alt="Project 2 Image 1">
+			<img src="images/Projectimages/school3.jpg" class="img-fluid" alt="Project 2 Image 1">
+			<img src="images/Projectimages/school4.jpg" class="img-fluid" alt="Project 2 Image 1">
+			<img src="images/Projectimages/school5.jpg" class="img-fluid" alt="Project 2 Image 1">
+			<img src="images/Projectimages/school6.jpg" class="img-fluid" alt="Project 2 Image 1">
+			<img src="images/Projectimages/school7.jpg" class="img-fluid" alt="Project 2 Image 1">
+			<img src="images/Projectimages/school8.jpg" class="img-fluid" alt="Project 2 Image 1">
+			<img src="images/Projectimages/school9.jpg" class="img-fluid" alt="Project 2 Image 1">
+			<img src="images/Projectimages/school10.jpg" class="img-fluid" alt="Project 2 Image 1">
+			<img src="images/Projectimages/school11.jpg" class="img-fluid" alt="Project 2 Image 1">
+			<img src="images/Projectimages/school12.jpg" class="img-fluid" alt="Project 2 Image 1">
+			<img src="images/Projectimages/school13.jpg" class="img-fluid" alt="Project 2 Image 1">
+			<img src="images/Projectimages/school14.jpg" class="img-fluid" alt="Project 2 Image 1">
+			<img src="images/Projectimages/school15.jpg" class="img-fluid" alt="Project 2 Image 1">
+			<img src="images/Projectimages/school16.jpg" class="img-fluid" alt="Project 2 Image 1">
+			<img src="images/Projectimages/school17.jpg" class="img-fluid" alt="Project 2 Image 1">
+			<img src="images/Projectimages/school18.jpg" class="img-fluid" alt="Project 2 Image 1">
+			<img src="images/Projectimages/school19.jpg" class="img-fluid" alt="Project 2 Image 1">
+			<img src="images/Projectimages/school20.jpg" class="img-fluid" alt="Project 2 Image 1">
+			<img src="images/Projectimages/school21.jpg" class="img-fluid" alt="Project 2 Image 1">
+			<img src="images/Projectimages/school22.jpg" class="img-fluid" alt="Project 2 Image 1">
+			<img src="images/Projectimages/school23.jpg" class="img-fluid" alt="Project 2 Image 1">
+			<img src="images/Projectimages/school24.jpg" class="img-fluid" alt="Project 2 Image 1">
+			<img src="images/Projectimages/school25.jpg" class="img-fluid" alt="Project 2 Image 1">
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+  
+  	  <!-- Project 3 Modal -->
+<div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="projectModal1Label">Project 3 Details</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <div class="owl-carousel project-slider">
+			<img src="images/Projectimages/social2.jpg" class="img-fluid" alt="Project 1 Image 1">
+			<img src="images/Projectimages/social3.jpg" class="img-fluid" alt="Project 1 Image 1">
+			<img src="images/Projectimages/social4.jpg" class="img-fluid" alt="Project 1 Image 1">
+			<img src="images/Projectimages/social5.jpg" class="img-fluid" alt="Project 1 Image 1">
+			<img src="images/Projectimages/social6.jpg" class="img-fluid" alt="Project 1 Image 1">
+			<img src="images/Projectimages/social7.jpg" class="img-fluid" alt="Project 1 Image 1">
+			<img src="images/Projectimages/social8.jpg" class="img-fluid" alt="Project 1 Image 1">
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+  	  <!-- Project 4 Modal -->
+<div class="modal fade" id="projectModal4" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="projectModal1Label">Project 3 Details</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <div class="owl-carousel project-slider">
+			<img src="images/Projectimages/appointment.jpg" class="img-fluid" alt="Project 1 Image 1">
+			<img src="images/Projectimages/appointment2.jpg" class="img-fluid" alt="Project 1 Image 1">
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+  	  <!-- Project 5 Modal -->
+<div class="modal fade" id="projectModal5" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="projectModal1Label">Project 3 Details</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <div class="owl-carousel project-slider">
+			<img src="images/Projectimages/app2.jpg" class="img-fluid" alt="Project 1 Image 1">
+			<img src="images/Projectimages/app3.jpg" class="img-fluid" alt="Project 1 Image 1">
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+  	  <!-- Project 6 Modal -->
+<div class="modal fade" id="projectModal6" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="projectModal1Label">Project 3 Details</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <div class="owl-carousel project-slider">
+			<img src="images/Projectimages/app4.jpg" class="img-fluid" alt="Project 1 Image 1">
+			<img src="images/Projectimages/app5.jpg" class="img-fluid" alt="Project 1 Image 1">
+			<img src="images/Projectimages/app6.jpg" class="img-fluid" alt="Project 1 Image 1">
+			<img src="images/Projectimages/app7.jpg" class="img-fluid" alt="Project 1 Image 1">
+			<img src="images/Projectimages/app10.jpg" class="img-fluid" alt="Project 1 Image 1">
+			<img src="images/Projectimages/app11.jpg" class="img-fluid" alt="Project 1 Image 1">
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+  	  <!-- Project 7 Modal -->
+<div class="modal fade" id="projectModal7" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="projectModal1Label">Project 3 Details</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <div class="owl-carousel project-slider">
+			<img src="images/Projectimages/app8.jpg" class="img-fluid" alt="Project 1 Image 1">
+			<img src="images/Projectimages/app9.jpg" class="img-fluid" alt="Project 1 Image 1">
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+  	  <!-- Project 8 Modal -->
+<div class="modal fade" id="projectModal8" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="projectModal1Label">Project 3 Details</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <div class="owl-carousel project-slider">
+			<img src="images/Projectimages/app12.jpg" class="img-fluid" alt="Project 1 Image 1">
+			<img src="images/Projectimages/app12.1.jpg" class="img-fluid" alt="Project 1 Image 1">
+			<img src="images/Projectimages/app17.jpg" class="img-fluid" alt="Project 1 Image 1">
+			<img src="images/Projectimages/app18jpg" class="img-fluid" alt="Project 1 Image 1">
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+  	  <!-- Project 9 Modal -->
+<div class="modal fade" id="projectModal9" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="projectModal1Label">Project 3 Details</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <div class="owl-carousel project-slider">
+			<img src="images/Projectimages/app13.jpg" class="img-fluid" alt="Project 1 Image 1">
+			<img src="images/Projectimages/app14.jpg" class="img-fluid" alt="Project 1 Image 1">
+			<img src="images/Projectimages/app15.jpg" class="img-fluid" alt="Project 1 Image 1">
+			<img src="images/Projectimages/app16.jpg" class="img-fluid" alt="Project 1 Image 1">
+			<img src="images/Projectimages/app19.jpg" class="img-fluid" alt="Project 1 Image 1">
+			<img src="images/Projectimages/app20.jpg" class="img-fluid" alt="Project 1 Image 1">
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+
+<!-- Video Modal -->
+<div class="modal fade" id="videoModal1" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="videoModalLabel">Project Video</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <video id="videoPlayer" class="embed-responsive" width="100%" controls>
+			<source src="./images/Projectimages/video1.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		  </video>
+		</div>
+	  </div>
+	</div>
+</div>
+
+<!-- Video Modal -->
+<div class="modal fade" id="videoModal2" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="videoModalLabel">Project Video</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <video id="videoPlayer" class="embed-responsive" width="100%" controls>
+			<source src="./images/Projectimages/video2.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		  </video>
+		</div>
+	  </div>
+	</div>
+</div>
+
+<!-- Video Modal -->
+<div class="modal fade" id="videoModal3" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="videoModalLabel">Project Video</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <video id="videoPlayer" class="embed-responsive" width="100%" controls>
+			<source src="./images/Projectimages/video3.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		  </video>
+		</div>
+	  </div>
+	</div>
+</div>
+
+<!-- Video Modal -->
+<div class="modal fade" id="videoModal4" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="videoModalLabel">Project Video</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <video id="videoPlayer" class="embed-responsive" width="100%" controls>
+			<source src="./images/Projectimages/video4.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		  </video>
+		</div>
+	  </div>
+	</div>
+</div>
+
+  <!-- Video Modal -->
+<div class="modal fade" id="videoModal5" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="videoModalLabel">Project Video</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <video id="videoPlayer" class="embed-responsive" width="100%" controls>
+			<source src="./images/Projectimages/video5.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		  </video>
+		</div>
+	  </div>
+	</div>
+</div>
+
+
+	<!-- <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="20">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="30">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="1000">0</strong>
+                <span>Mentored Students</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="500">0</strong>
+                <span>Cups of coffee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg);">
+		<div class="row justify-content-center">
+			<div class="col-md-7 ftco-animate text-center">
+				<h2>Get in <span>Touch</span></h2>
+				<div class="heading">
+					<h4>I love to solve business problems &amp; uncover hidden data stories</h4>
+					<br>
+					<form action="submit_form.php" method="POST" class="contact-form">
+						<div class="form-group">
+							<input type="text" class="form-control" name="name" placeholder="Your Name" required>
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control" name="email" placeholder="Your Email" required>
+						</div>
+						<div class="form-group">
+							<textarea class="form-control" name="message" rows="4" placeholder="Your Message" required></textarea>
+						</div>
+						<div class="form-group">
+							<button type="submit" class="btn btn-primary py-3 px-5">Send Message</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Hyderabad, Pakistan</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a>+92 316 8287900</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a >atifmemon15011@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="#">resumelink</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+			<p style="text-align: center;"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | M3H-Web-Dev 
+				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			
+		   </div>
+   </div>
+ </section>
+
+
+ 
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    <script>
+  $(document).ready(function(){
+    $(".project-slider").owlCarousel({
+      items: 1, 
+      loop: true, 
+      nav: true,
+      dots: true,
+      autoplay: true,
+      autoplayTimeout: 3000
+    });
+  });
+	$(document).ready(function(){
+	  var videoSrc = "";
+  
+	  $(".project-video-thumbnail").click(function() {
+		  videoSrc = $(this).data("video");
+		  $("#videoFrame").attr("src", videoSrc + "?autoplay=1");
+	  });
+  
+	  $("#videoModal").on("hidden.bs.modal", function() {
+		  $("#videoFrame").attr("src", "");
+	  });
+	});
+  
+	$(document).ready(function(){
+	  $("#videoModal").on("hidden.bs.modal", function() {
+		  $("#mp4Video")[0].pause();
+	  });
+	});
+  </script>
+  
+  </body>
+</html>
